@@ -3,6 +3,7 @@
 the function ```printf()``` is used to display output in the screen.
 
 * Examples:
+
 ```C
 printf("Hello World!\n", );
 printf("%d\n", var);  // where var is an int variable

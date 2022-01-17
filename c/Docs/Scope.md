@@ -4,8 +4,9 @@ Scope is the area under which the variable is *alive*.
 
 - Example 1:
     - Here we say the scope of the variable ```var``` is only within the ```main()``` function.
-    - The variable ```var``` is *local* to ```main()``` function only. Therefore, we call ```var``` a **local variable** to the ```main()``` function.
-```C
+    - The variable ```var``` is *local* to ```main()``` function only. Therefore, we call ```var``` a **local variable** to the ```main()``` function.    
+
+```c
 #include <stdio.h>
 
 int main(int argc, char const *argv[]) {
@@ -20,6 +21,7 @@ int main(int argc, char const *argv[]) {
 
 - Example 2:
     - Here the variable ```var``` is not visible to the function ```func()``` since it is not a local variable to ```func()```.
+
 ```C
 
 int main(int argc, char const *argv[]) {
@@ -38,6 +40,7 @@ void int func() {
 ```
 
 - Variable redefinition is not allowed in C. In other words, you're not allowed to declare the same variable twice.
+
 ```C
 int var = 3;
 int var = 4;
@@ -45,6 +48,7 @@ int var = 4;
 ```
 
 - **Global variable** is a variable that is visible to all functions.
+
 ```C
 int var = 10;
 

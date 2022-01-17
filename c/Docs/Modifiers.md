@@ -3,6 +3,7 @@
 ## Automatic Variables: ```auto``` ##
 
 In C. All local variables are automatic variables, as they get destroyed automatically after the function finishes execution, which is very efficient in terms of memory performance, since it frees up the memory it occupies since it is not used.
+
 ```C
 // Both of these definitions are equivalent
 int var = 5;
@@ -20,26 +21,29 @@ auto int var = 5;
 - When you use ```extern int var;```, you instruct the compiler that you're only declaring a new variable, and therefore, the compiler won't assign a garbage value to this variable as they won't allocate any memory to it.
 - ```extern``` is used when a particular file needs to access a variable from another file.
 - Example:
-    - Inside main.c file:
-```C
-// main.c
-#include <stdio.h>
 
-extern int a;   // ONLY DECLARE a
-int main(int argc, char const *argv[]) {
-    printf("%d\n", a);    // prints 5
-    return 0;
-}
-```
+    - Inside main.c file:
+
+    ```C
+    // main.c
+    #include <stdio.h>
+
+    extern int a;   // ONLY DECLARE a
+    int main(int argc, char const *argv[]) {
+        printf("%d\n", a);    // prints 5
+        return 0;
+    }
+    ```
     - Inside other.c file:
-```C
-// other.c
-int a = 5;
-```
+
+    ```C
+    // other.c
+    int a = 5;
+    ```
 - In order to link both files, we have to complile the program like this:
-```
-$gcc -o bin/program main.c other.c   
-```
+    ```
+    $gcc -o bin/program main.c other.c   
+    ```
 
 
 ## Register Variables: ```register``` ##
@@ -54,6 +58,7 @@ $gcc -o bin/program main.c other.c
 ## Static Variables: ```static``` ##
 
 Syntax:
+
 ```
 static data_type var_name = var_value;
 ```
@@ -63,6 +68,7 @@ static data_type var_name = var_value;
 - Static variables are allocated memory in data segment, not stack segment. See [memory layout of C programs](https://www.geeksforgeeks.org/memory-layout-of-c-program/) for details.
 
 -  Static variables (like global variables) are initialized as 0 if not initialized explicitly. For example in the below program, value of x is printed as 0, while value of y is something garbage.
+
 ```C
 #include <stdio.h>
 int main()
@@ -74,8 +80,10 @@ int main()
 ```
 
 -  In C, static variables can only be initialized using constant literals. For example, following program fails in compilation.
+
 ```C
 #include<stdio.h>
+
 int initializer(void)
 {
 	return 50;
@@ -89,7 +97,9 @@ int main()
 	return 0;
 }
 ```
+
 Output:
+
 ```
 In function 'main':
 9:5: error: initializer element is not constant
@@ -107,15 +117,18 @@ In function 'main':
 1. We can define constants using [macros](Macros.md):
 
 Syntax:
+
 ```
 #define NAME value
 ```
+
 Preprocessor is responsible for processing macros (*not the compiler*) by replacing the name with the value inside the source code.
 > It is good practice to declare constants/macros with capital letters.
 
 2. We can define constants using ```const``` keyword
 
 Syntax:
+
 ```
 const data_type NAME = value
 ```

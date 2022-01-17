@@ -5,6 +5,7 @@
 - An integer can take 2 bytes of memory space (16-bits) or 4 bytes of memory space (32-bit) which is dependent on your machine.
 
 - To know exactly how many bytes does a data type hold, you can use the ```sizeof()``` operator:
+
 ```C
 #include "stdio.h"
 
@@ -13,7 +14,8 @@ int int main(int argc, char const *argv[]) {
     return 0;
 }
 ```
-> ```sizeof() is a unary operator and is not a function!
+
+> ```sizeof()``` is a unary operator and is not a function!
 
 ### MAX and MIN value that an int type can hold ###
 
@@ -22,7 +24,10 @@ int int main(int argc, char const *argv[]) {
 
 ### Using short and long ###
 
-- Note that ```sizeof(short int) <= sizeof(int) <= sizeof(long int)```
+- Note that
+```
+sizeof(short int) <= sizeof(int) <= sizeof(long int)
+```
 
 ```C
 #include "stdio.h"
@@ -35,6 +40,7 @@ int int main(int argc, char const *argv[]) {
 }
 
 - We can include a c library called ```limits.h``` which includes 2 symbolic constants that define the limits of ```int``` type as well as any data type in the C language:
+
 ```C
 #include <stdio.h>
 #include <limits.h>
@@ -50,7 +56,9 @@ int main(int argc, char const *argv[]) {
   return 0;
 }
 ```
+
 - The ```limits.h``` library also include:
+
 ```C
 short int v1 = SHRT_MIN;            // %d
 short int v2 = SHRT_MAX;            // %d
@@ -62,7 +70,7 @@ unsigned long int v6 = ULONG_MAX;   // %ud
 
 ### What happens when you exceed the allowed range ###
 
-<!-- todo -->
+Check [Exceeding The Valid Range of Data Types](https://youtu.be/nwfoxcXgs8o?list=PLBlnK6fEyqRggZZgYpPMUxdY1CYkZtARR)
 <!-- watch: https://youtu.be/nwfoxcXgs8o?list=PLBlnK6fEyqRggZZgYpPMUxdY1CYkZtARR -->
 
 <br/>
@@ -70,6 +78,7 @@ unsigned long int v6 = ULONG_MAX;   // %ud
 ## Character Type ##
 
 - Defining and declaring a Character type:
+
 ```C
 char something = 'N';
 char something2 = 65;

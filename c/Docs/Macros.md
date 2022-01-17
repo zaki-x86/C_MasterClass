@@ -3,7 +3,8 @@
 - A **macro** is a piece of code in a program that is replaced by the value of the macro. Macro is defined by #define directive. Whenever a macro name is encountered by the compiler, it replaces the name with the definition of the macro. Macro definitions need not be terminated by semi-colon(;).
 
     - Examples:
-    1.
+    1.  
+
     ```C
     // C program to illustrate macros
     #include <stdio.h>
@@ -24,6 +25,7 @@
     ```
 
     2.
+
     ```C
     // C program to illustrate macros
     #include <stdio.h>
@@ -51,6 +53,7 @@
 
 - **Chain Macros**: Macros inside macros are termed as chain macros. In chain macros first of all parent macro is expand then child macro is expanded.
 Below is the illustration of a Chain Macro:
+
 ```C
 // C program to illustrate macros
 #include <stdio.h>
@@ -73,6 +76,7 @@ int main()
 
 - **Multi-line Macros**: An object-like macro could have a multi-line. So to create a multi-line macro you have to use backslash-newline.
 Below is the illustration of multiline macros:
+
 ```C
 // C program to illustrate macros
 #include <stdio.h>
@@ -102,6 +106,7 @@ int main()
 
 - **Function-like Macro**: These macros are the same as a function call. It replaces the entire code instead of a function name. Pair of parentheses immediately after the macro name is necessary. *If we put a space between the macro name and the parentheses in the macro definition then the macro will not work*.
 A function-like macro is only lengthened if anD only if its name appears with a pair of parentheses after it. If we don’t do this, the function pointer will get the address of the real function and lead to a syntax error.
+
 ```C
 // C program to illustrate macros
 #include <stdio.h>
@@ -126,6 +131,7 @@ int main()
 ```
 
 - ```<stdio.h>``` has a built-in date and time macros:
+
 ```C
 #include <stdio.h>
 
