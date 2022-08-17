@@ -120,4 +120,4 @@ We use special variables called **[pointers]()**.
 In C, functions are global by default. This means that if we want to access the function from the file where it is declared, we can do it easily.
 
 If we want to restrict the access to the function, then we can make our function static by simply putting a keyword ```static``` in front of the function.
-> For more information about the ```static``` keyword, refer to [```static``` Keyword in C]()
+> For more information about the ```static``` keyword, refer to [static Keyword in C]()

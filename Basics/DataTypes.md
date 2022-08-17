@@ -25,6 +25,7 @@ int int main(int argc, char const *argv[]) {
 ### Using short and long ###
 
 - Note that
+
 ```
 sizeof(short int) <= sizeof(int) <= sizeof(long int)
 ```
@@ -38,8 +39,9 @@ int int main(int argc, char const *argv[]) {
 
     return 0;
 }
+```
 
-- We can include a c library called ```limits.h``` which includes 2 symbolic constants that define the limits of ```int``` type as well as any data type in the C language:
+- We can include a c library called `limits.h` which includes 2 symbolic constants that define the limits of ```int``` type as well as any data type in the C language:
 
 ```C
 #include <stdio.h>

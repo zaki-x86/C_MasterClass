@@ -40,15 +40,15 @@ Allocates `size` bytes of uninitialized storage.
 If allocation succeeds, returns a pointer that is suitably aligned for any object type with fundamental alignment.
 
 > **What do we mean by alignment?**
-> Every complete object type has a >property called alignment requirement, >which is an integer value of type size_t >representing the number of bytes between >successive addresses at which objects of ?this type can be allocated. The valid >alignment values are non-negative >integral powers of two.
+> Every complete object type has a >property called alignment requirement, >which is an integer value of type size_t > representing the number of bytes between >successive addresses at which objects of ?this type can be allocated. The valid >alignment values are non-negative >integral powers of two.
 >
->The alignment requirement of a type can be queried with `_Alignof`.(since C11)
+> The alignment requirement of a type can be queried with `_Alignof`.(since C11)
 
 On success, returns the pointer to the beginning of newly allocated memory. To avoid a memory leak, the returned pointer must be deallocated with `free()` or `realloc()`.
 
 On failure, returns `NULL`.
 
->allocated memory is initialized with a garbage value.
+> allocated memory is initialized with a garbage value.
 
 Example:
 
