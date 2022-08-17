@@ -13,22 +13,22 @@ This repo is divided into sections:
 
 ## Basics ##
 
-**Tutorial#1:** Naming Convention
-**Tutorial#2:** how printf() works
-**Tutorial#3:** Data Types
-**Tutorial#4:** Scope
-**Tutorial#5:** Variable Modifiers
-**Tutorial#6:** Macros
-**Tutorial#7:** Bitwise Operators
-**Tutorial#8:** Conditional Operator
-**Tutorial#9:** lvalues and rvalues
-**Tutorial#10:** Functions
-**Tutorial#11:** Arrays
-**Tutorial#12:** Pointers
-**Tutorial#13:** Generic Pointers
-**Tutorial#14:** Pointers to Functions
-**Tutorial#15:** Structures
-**Tutorial#16:** Unions
-**Tutorial#17:** Strings
-**Tutorial#18:** Memory Management
-**Tutorial#19:** Error Handling
+- **Tutorial#1:** Naming Convention
+- **Tutorial#2:** how printf() works
+- **Tutorial#3:** Data Types
+- **Tutorial#4:** Scope
+- **Tutorial#5:** Variable Modifiers
+- **Tutorial#6:** Macros
+- **Tutorial#7:** Bitwise Operators
+- **Tutorial#8:** Conditional Operator
+- **Tutorial#9:** lvalues and rvalues
+- **Tutorial#10:** Functions
+- **Tutorial#11:** Arrays
+- **Tutorial#12:** Pointers
+- **Tutorial#13:** Generic Pointers
+- **Tutorial#14:** Pointers to Functions
+- **Tutorial#15:** Structures
+- **Tutorial#16:** Unions
+- **Tutorial#17:** Strings
+- **Tutorial#18:** Memory Management
+- **Tutorial#19:** Error Handling
